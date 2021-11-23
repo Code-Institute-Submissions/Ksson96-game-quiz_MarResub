@@ -101,3 +101,11 @@ button:hover {
 #progress {
     display: none;
 }
+
+#play-again {
+    display:none;
+}
+
+#next {
+    display: none;
+}
