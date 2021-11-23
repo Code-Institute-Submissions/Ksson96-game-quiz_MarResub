@@ -17,4 +17,9 @@ h1, h2 {
 
 #logo {
     font-family: 'Slackey', cursive, 'Sans-seif';
+    text-align:center;
+    font-size: 68px;
+    margin: 0 auto;
+    padding-top: 90px;
 }
+
