@@ -36,41 +36,54 @@ h2 {
 
 }
 
-#start {
-    width: 40%;
-    height: 100px;
-    display: inline-block;
-    padding: 0.46em 1.6em;
-    border: 0.1em solid #000000;
-    margin-left: 30%;
-    margin-top: 60px;
-    border-radius: 0.18em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Peralta', sans-serif;
-    font-size: xx-large;
-    font-weight: 300;
+
+button {
     color: #fff;
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
     background-color: #ff6600;
     text-align: center;
     transition: all 0.15s;
+    border-radius: 0.18em;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.46em 1.6em;
+    display:inline-block;
+    border: 0.1em solid #000000;
+    font-weight: 300;
+    font-size: larger;
+
 }
 
-#start:hover {
+button:hover {
     text-shadow: 0 0 2em rgba(255, 255, 255, 1);
     color: #000000;
     border-color: #FFFFFF;
 }
 
 @media all and (max-width:30em) {
-    #start {
-        display: block;
+    button {
+        display: block; /* display none */
         margin: 0.4em auto;
 
 
     }
 }
+
+#start {
+    width: 40%;
+    height: 100px;
+    display: none; /*Display none */
+    margin-left: 30%;
+    margin-top: 60px;
+    font-family: 'Peralta', sans-serif;
+    font-size: xx-large;
+    
+    
+}
+
+
+
+
 
 #start-heading {
     color:white;
@@ -78,10 +91,11 @@ h2 {
     letter-spacing: 4px;
     text-align: center;
     margin-top: 140px;
+    display: none; /*display-none */
 }
 
 #game-container {
-    display: none;
+
 }
 
 #progress {
