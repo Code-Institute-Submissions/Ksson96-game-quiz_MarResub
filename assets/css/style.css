@@ -30,3 +30,31 @@ h1, h2 {
     margin: 0 auto;
     margin-top: 40px;
 }
+
+#start {
+    display:inline-block;
+    padding:0.46em 1.6em;
+    border:0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.18em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Peralta',sans-serif;
+    font-weight:300;
+    color:#fff;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#ff6600;
+    text-align:center;
+    transition: all 0.15s;
+    }
+    #start:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#000000;
+    border-color:#FFFFFF;
+    }
+    @media all and (max-width:30em){
+    #start{
+    display:block;
+    margin:0.4em auto;
+     }
+    }
