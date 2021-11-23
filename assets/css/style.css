@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Slackey&display=swap');
+
+body {
+    background-color:palegoldenrod;
+    font-family: 'Peralta', 'sans-seif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color:rgb(1, 33, 51);
+}
+
+#logo {
+    font-family: 'Slackey', cursive, 'Sans-seif';
+}
