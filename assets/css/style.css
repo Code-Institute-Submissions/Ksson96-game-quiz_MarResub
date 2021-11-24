@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Peralta&family=Slackey&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ h1 {
 #main-container {
     background-color: rgb(1, 33, 51);
     width: 60%;
-    height: 60vh;
+    height: 70vh;
     margin: 0 auto;
     margin-top: 40px;
     border: 0.1em solid #000000;
@@ -47,7 +48,7 @@ button {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.46em 1.6em;
-    display:inline-block;
+    display: inline-block;
     border: 0.1em solid #000000;
     font-weight: 300;
     font-size: larger;
@@ -70,25 +71,118 @@ button:hover {
     font-size: xx-large;
     display: block;
     margin: 0.4em auto;
-    
-    
+    display: none;
+    /*display none */
+
+
 }
 
 #start-heading {
-    color:white;
-    font-size:48px;
+    color: white;
+    font-size: 48px;
     letter-spacing: 4px;
     text-align: center;
     margin-top: 140px;
+    display: none;
+    /*display none */
 
 }
 
+#game-container {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#question-container {
+    color: white;
+    text-align: center;
+    height: auto;
+    padding-top: 5%;
+    width: 90%;
+    margin: 0 auto;
+
+
+}
+
+#question {
+    color: white;
+    margin: 0;
+}
+
+#option-container {
+    height: 60%;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+}
+
+.options {
+    font-size: larger;
+    width: 35%;
+    height: auto;
+    margin: 10% 5% 0% 5%;
+
+
+}
+
+#progress {
+    padding-top: 10px;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+    /*DOLD */
+}
+
+
+#next-container {
+    text-align: right;
+    padding-bottom: 10px;
+    height: auto;
+
+}
+
+
+
+#result {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: none;
+    /* DOLD */
+}
+
+#score {
+    color: rgb(252, 138, 46);
+    margin: 0;
+    padding-top: 100px;
+    text-shadow: 0.5px 1px #000;
+
+}
+
+#play-again-heading {
+    color: white;
+    padding-top: 50px;
+}
+
+#play-again {
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* Start page */
 
     #logo {
         font-size: 46px;
     }
-   
+
     #main-container {
         width: 90%;
     }
@@ -105,6 +199,26 @@ button:hover {
         margin: 0 auto;
         margin-top: 10%;
         height: 80px;
+    }
+
+    /* Game page */
+
+
+
+
+    .options {
+        margin-top: 20px;
+        font-size: small;
+    }
+
+
+
+    #next-container {
+        text-align: center;
+        margin: 0;
+
+
+
     }
 
 }
@@ -127,6 +241,8 @@ button:hover {
         margin-top: 10%;
         height: 80px;
     }
+
+
 
 
 }
@@ -160,91 +276,17 @@ button:hover {
 
 }
 
-#game-container {
-    width: 100%;
-    height: 100%;
-    display: none; /*display none */
+@media only screen and (min-width: 1201px) {
+    #next {
+        height: auto;
+        font-size: 22px;
+        width: 30%;
 
-}
+    }
 
-#question-container {
-    color:white;
-    text-align: center;
-    height: 150px;
-    padding-top: 50px;
-    width: 80%;
-    margin: 0 auto;
+    #next-container {
+        padding-right: 10%;
+    }
 
 
-}
-
-#question {
-    color: white;
-    margin: 0;
-}
-
-#option-container {
-    height: 300px;
-    text-align: center;
-    width: 100%;
-}
-
-.options {
-    font-size: larger;
-    width: 35%;
-    height: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 30px;
-
-    
-}
-
-#progress {
-    padding-top: 10px;
-    font-size: x-large;
-    text-align: center;
-    font-weight: 500;
-    display: none; /*DOLD */
-}
-
-
-#next-container {
-    text-align: right;
-    margin-right: 10%;
-    padding-top: 40px;
-}
-
-#next {
-width: 20%;
-height: 60px;
-font-size:22px;
-
-    
-}
-
-#result {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    display:none; /* DOLD */
-}
-
-#score {
-    color:rgb(252, 138, 46);
-    margin: 0;
-    padding-top: 100px;
-    text-shadow:0.5px 1px #000;
-    
-}
-
-#play-again-heading {
-    color:white;
-    padding-top: 50px;
-}
-
-#play-again {
-    margin-top: 30px;
-    font-size: x-large;
 }
