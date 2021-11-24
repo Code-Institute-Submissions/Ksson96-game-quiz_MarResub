@@ -29,6 +29,12 @@ function calculateScore() {
 
 }
 
+function nextQuestion (event) {
+    currentQuestion.innerText = gameContent[questionIndex].question;
+    if (questionIndex <= 8) {
+        questionIndex++;
+    }
+
 function displayQuestion() {
    /* currentQuestion.innerText = gameContent[1].question; */
    
