@@ -3,6 +3,7 @@ const gameStart =  document.getElementById('start')
 gameStart.addEventListener('click', runGame);
 let currentQuestion = document.getElementById('question');
 let nextButton = document.getElementById('next');
+nextButton.addEventListener('click', nextQuestion);
 let questionIndex = 0;
 
 
