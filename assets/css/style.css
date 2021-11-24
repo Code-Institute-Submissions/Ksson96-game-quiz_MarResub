@@ -60,30 +60,19 @@ button:hover {
     border-color: #FFFFFF;
 }
 
-@media all and (max-width:30em) {
-    button {
-        display: block; /* display none */
-        margin: 0.4em auto;
-
-
-    }
-}
 
 #start {
-    width: 40%;
+    width: 60%;
     height: 100px;
-    display: none; /*Display none */
     margin-left: 30%;
     margin-top: 60px;
     font-family: 'Peralta', sans-serif;
     font-size: xx-large;
+    display: block;
+    margin: 0.4em auto;
     
     
 }
-
-
-
-
 
 #start-heading {
     color:white;
@@ -91,7 +80,84 @@ button:hover {
     letter-spacing: 4px;
     text-align: center;
     margin-top: 140px;
-    display: none; /*display-none */
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #logo {
+        font-size: 46px;
+    }
+   
+    #main-container {
+        width: 90%;
+    }
+
+    #start-heading {
+        margin: 0;
+        padding-top: 40%;
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+
+    #start {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+        height: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #main-container {
+        width: 90%;
+    }
+
+    #start-heading {
+        margin: 0;
+        padding-top: 20%;
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    #start {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+        height: 80px;
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #main-container {
+        width: 80%;
+    }
+
+    #start {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+        height: 80px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #start {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+        height: 80px;
+    }
+
+    #main-container {
+        width: 80%;
+    }
+
 }
 
 #game-container {
@@ -139,11 +205,9 @@ button:hover {
     font-size: x-large;
     text-align: center;
     font-weight: 500;
+    display: none; /*DOLD */
 }
 
-#play-again {
-    
-}
 
 #next-container {
     text-align: right;
@@ -164,6 +228,7 @@ font-size:22px;
     width: 100%;
     text-align: center;
     margin: 0;
+    display:none; /* DOLD */
 }
 
 #score {
