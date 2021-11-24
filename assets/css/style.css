@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Peralta&family=Slackey&display=swap');
 
+
 body {
     background-color: palegoldenrod;
     font-family: 'Peralta', 'sans-seif';
@@ -102,8 +103,9 @@ button:hover {
 #question-container {
     color:white;
     text-align: center;
-    padding-top: 10%;
-    width: 70%;
+    height: 150px;
+    padding-top: 50px;
+    width: 80%;
     margin: 0 auto;
 
 
@@ -114,6 +116,23 @@ button:hover {
     margin: 0;
 }
 
+#option-container {
+    height: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+.options {
+    font-size: larger;
+    width: 35%;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+
+    
+}
+
 #progress {
     display: none;
 }
@@ -122,6 +141,16 @@ button:hover {
     display:none;
 }
 
+#next-container {
+    text-align: right;
+    margin-right: 10%;
+    padding-top: 40px;
+}
+
 #next {
-    display: none;
+width: 20%;
+height: 60px;
+font-size:22px;
+
+    
 }
