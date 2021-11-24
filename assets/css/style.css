@@ -159,9 +159,24 @@ font-size:22px;
 #result {
     height: 100%;
     width: 100%;
+    text-align: center;
+    margin: 0;
 }
 
 #score {
-    color:white;
+    color:rgb(252, 138, 46);
     margin: 0;
+    padding-top: 100px;
+    text-shadow:0.5px 1px #000;
+    
+}
+
+#play-again-heading {
+    color:white;
+    padding-top: 50px;
+}
+
+#play-again {
+    margin-top: 30px;
+    font-size: x-large;
 }
