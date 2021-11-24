@@ -16,12 +16,7 @@ function runGame() {
     displayQuestion();
 
 }
-
     
-    
-
-console.log(questionIndex);
-
 function checkAnswer () {
 
 }
@@ -34,21 +29,18 @@ function nextQuestion (event) {
     currentQuestion.innerText = gameContent[questionIndex].question;
     if (questionIndex <= 8) {
         questionIndex++;
+        console.log(questionIndex);
     }
-
+}
 function displayQuestion() {
-   /* currentQuestion.innerText = gameContent[1].question; */
+
    
    currentQuestion.innerText = gameContent[questionIndex].question;
-   
-   
-    
-        }
-       /* for(let i = 0; i < gameContent.length;) {
-            currentQuestion.innerText = gameContent[i].question;
-    }
+ }
 
-}*/
+ function displayResults() {
+
+ }
 
 const gameContent =  [{
        question: "In the movie &ldquo;The Iron Giant,&rdquo; this character is the protagonist.",
