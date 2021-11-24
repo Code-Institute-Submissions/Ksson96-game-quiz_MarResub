@@ -22,3 +22,5 @@ function calculateScore() {
 function displayQuestion() {
 
 }
+
+let gameContent = {};
