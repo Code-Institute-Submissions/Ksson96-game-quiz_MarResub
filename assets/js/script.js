@@ -1,6 +1,7 @@
 
 const gameStart =  document.getElementById('start')
 gameStart.addEventListener('click', runGame);
+let currentQuestion = document.getElementById('question');
 
 function runGame() {
     let startHeading = document.getElementById('start-heading');
@@ -21,6 +22,7 @@ function calculateScore() {
 }
 
 function displayQuestion() {
+    currentQuestion.innerText = gameContent[1].question;
 
 }
 
