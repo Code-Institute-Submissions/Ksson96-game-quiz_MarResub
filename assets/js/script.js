@@ -8,6 +8,7 @@ function runGame() {
     gameStart.classList.add('hide');
     startHeading.classList.add('hide'); 
     gameContainer.classList.remove('hide');
+    displayQuestion();
 
 }
 
@@ -23,8 +24,7 @@ function displayQuestion() {
 
 }
 
-const gameContent = {
-    [{
+const gameContent =  [{
        question: "In the movie &ldquo;The Iron Giant,&rdquo; this character is the protagonist.",
        correct_answer: "Hogarth Hughes",
        incorrect_answers: ["Kent Mansley", "Dean McCoppin", "Annie Hughes"]
@@ -64,5 +64,6 @@ const gameContent = {
        question: "Who did the score to the original Blade Runner?",
        correct_answer: "Vangelis",
        incorrect_answers: ["Kitaro", "Yanni", "Enya"]
-   }]
-};
+   }];
+
+
