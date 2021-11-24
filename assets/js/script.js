@@ -2,6 +2,7 @@
 const gameStart =  document.getElementById('start')
 gameStart.addEventListener('click', runGame);
 let currentQuestion = document.getElementById('question');
+let currentOptions = document.getElementsByClassName('options');
 let nextButton = document.getElementById('next');
 nextButton.addEventListener('click', nextQuestion);
 let questionIndex = 0;
@@ -36,8 +37,10 @@ function nextQuestion (event) {
         console.log(questionIndex);
     }
 }
-function displayQuestion() {
 
+
+function displayQuestion() {
+   
   
   
     currentQuestion.innerText = gameContent[questionIndex].question;
