@@ -22,7 +22,13 @@ function calculateScore() {
 }
 
 function displayQuestion() {
-    currentQuestion.innerText = gameContent[1].question;
+   /* currentQuestion.innerText = gameContent[1].question; */
+
+    for(let i = 0; i < gameContent.length; i++) {
+        currentQuestion.innerText = gameContent[i].question;
+        
+
+    }
 
 }
 
