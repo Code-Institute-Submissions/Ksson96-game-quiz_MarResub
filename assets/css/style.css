@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Peralta&family=Slackey&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
 
 body {
     background-color: palegoldenrod;
     font-family: 'Peralta', 'sans-seif';
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
+
 
 h1 {
     color: rgb(1, 33, 51);
@@ -97,6 +97,7 @@ button:hover {
 #game-container {
     width: 100%;
     height: 100%;
+    display: none; /*display none */
 
 }
 
@@ -138,7 +139,7 @@ button:hover {
 }
 
 #play-again {
-    display:none;
+    
 }
 
 #next-container {
@@ -153,4 +154,14 @@ height: 60px;
 font-size:22px;
 
     
+}
+
+#result {
+    height: 100%;
+    width: 100%;
+}
+
+#score {
+    color:white;
+    margin: 0;
 }
