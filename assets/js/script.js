@@ -3,6 +3,9 @@ const gameStart =  document.getElementById('start')
 gameStart.addEventListener('click', runGame);
 let currentQuestion = document.getElementById('question');
 
+let questionIndex = 0;
+
+
 function runGame() {
     let startHeading = document.getElementById('start-heading');
     let gameContainer = document.getElementById('game-container');
@@ -12,6 +15,11 @@ function runGame() {
     displayQuestion();
 
 }
+
+    
+    
+
+console.log(questionIndex);
 
 function checkAnswer () {
 
@@ -23,14 +31,17 @@ function calculateScore() {
 
 function displayQuestion() {
    /* currentQuestion.innerText = gameContent[1].question; */
-
-    for(let i = 0; i < gameContent.length; i++) {
-        currentQuestion.innerText = gameContent[i].question;
-        
-
+   
+   currentQuestion.innerText = gameContent[questionIndex].question;
+   
+   
+    
+        }
+       /* for(let i = 0; i < gameContent.length;) {
+            currentQuestion.innerText = gameContent[i].question;
     }
 
-}
+}*/
 
 const gameContent =  [{
        question: "In the movie &ldquo;The Iron Giant,&rdquo; this character is the protagonist.",
