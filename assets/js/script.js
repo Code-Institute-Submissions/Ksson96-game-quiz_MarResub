@@ -2,7 +2,7 @@
 const gameStart =  document.getElementById('start')
 gameStart.addEventListener('click', runGame);
 let currentQuestion = document.getElementById('question');
-let currentOptions = document.getElementsByClassName('options');
+/*let currentOptions = document.getElementsByClassName('options');*/
 let nextButton = document.getElementById('next');
 nextButton.addEventListener('click', nextQuestion);
 let questionIndex = 0;
@@ -31,23 +31,47 @@ function calculateScore() {
 }
 
 function nextQuestion (event) {
-    currentQuestion.innerText = gameContent[questionIndex].question;
-    if (questionIndex <= 8) {
-        questionIndex++;
+
+
+
+
+    if (questionIndex < gameContent.length) {
+        
         console.log(questionIndex);
+        questionIndex++;
+        currentQuestion.innerText = gameContent[questionIndex].question;
+        currentOption1 = gameContent[questionIndex].options[0];
+        currentOption2 = gameContent[questionIndex].options[1];
+        currentOption3 = gameContent[questionIndex].options[2];
+        currentOption4 = gameContent[questionIndex].options[3];
+        console.log(currentOption1);
+        
+     
+        
     }
 }
 
 
 function displayQuestion() {
-    console.log(currentOptions);
+    
+   
    /* for (let option of currentOptions) {}*/
-        for (let i = 0; i < 10; i++) {
-            console.log(gameContent[i].options)
+     /*   for (let i = 0; i < 4; i++) {*/
+        currentOption1 = gameContent[questionIndex].options[0];
+        currentOption2 = gameContent[questionIndex].options[1];
+        currentOption3 = gameContent[questionIndex].options[2];
+        currentOption4 = gameContent[questionIndex].options[3];
+        
+        console.log(currentOption1);
+            console.log(currentQuestion);
+            
+            
+           
+            
             
 
-        }
-      /*  for (let currentOptions of )*/
+      /*  } */
+
       currentQuestion.innerText = gameContent[questionIndex].question;
     }
     
