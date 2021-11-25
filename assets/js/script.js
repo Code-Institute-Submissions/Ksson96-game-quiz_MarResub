@@ -32,14 +32,15 @@ function calculateScore() {
 
 function nextQuestion (event) {
 
+    
 
 
-
-    if (questionIndex < gameContent.length) {
         
         console.log(questionIndex);
-        questionIndex++;
-        currentQuestion.innerText = gameContent[questionIndex].question;
+        
+        if (questionIndex < gameContent.length) {
+           questionIndex++;
+        currentQuestion.innerText = questions[questionIndex].question;
         currentOption1 = gameContent[questionIndex].options[0];
         currentOption2 = gameContent[questionIndex].options[1];
         currentOption3 = gameContent[questionIndex].options[2];
@@ -48,11 +49,21 @@ function nextQuestion (event) {
         
      
         
-    }
+    } 
 }
 
-
+var questions = [];
 function displayQuestion() {
+    
+    for(let i = 0; i < gameContent.length; i++) {
+        questions.push(gameContent[i].question);
+        
+        
+        
+    }
+    
+    
+
     
    
    /* for (let option of currentOptions) {}*/
@@ -66,7 +77,7 @@ function displayQuestion() {
             console.log(currentQuestion);
             
             
-           
+          
             
             
 
@@ -83,6 +94,8 @@ function displayQuestion() {
  function displayResults() {
 
  }
+
+
 
 const gameContent =  [{
        question: "In the movie &ldquo;The Iron Giant,&rdquo; this character is the protagonist.",
