@@ -72,7 +72,7 @@ function displayResults() {
 /* Questions and Answers */
 
 const gameContent = [{
-    question: 'In the movie The Iron Giant, this character is the protagonist.',
+    question: 'In the movie "The Iron Giant", this character is the protagonist.',
     options: ['Kent Mansley', 'Dean McCoppin', 'Annie Hughes', 'Hogarth Hughes'],
     correct_answer: 'Hogarth Hughes',
     incorrect_answers: ['Kent Mansley', 'Dean McCoppin', 'Annie Hughes']
@@ -97,7 +97,7 @@ const gameContent = [{
     correct_answer: 'Peter Cushing',
     incorrect_answers: ['Boris Karloff', 'Vincent Price', 'Lon Chaney Jr.']
 }, {
-    question: '"In The Lord of the Rings: The Fellowship of the Ring", which one of the following characters from the book was left out of the film?',
+    question: 'In "The Lord of the Rings: The Fellowship of the Ring", which one of the following characters from the book was left out of the film?',
     options: ['Strider', 'Barliman Butterbur', 'Celeborn', 'Tom Bombadil'],
     correct_answer: 'Tom Bombadil',
     incorrect_answers: ['Strider', 'Barliman Butterbur', 'Celeborn']
@@ -112,12 +112,12 @@ const gameContent = [{
     correct_answer: 'Mrs. Doubtfire',
     incorrect_answers: ['Old Dogs', 'Jumanji', 'Awakenings']
 }, {
-    question: "In Finding Nemo, what was the name of Nemo's mom?",
+    question: 'In "Finding Nemo", what was the name of Nemo\'s mom?',
     options: ['Coral', 'Sandy', 'Pearl', 'Shelly'],
     correct_answer: 'Coral',
     incorrect_answers: ['Sandy', 'Pearl', 'Shelly']
 }, {
-    question: 'Who did the score to the original Blade Runner?',
+    question: 'Who did the score to the original "Blade Runner"?',
     options: ['Kitaro', 'Vangelis', 'Yanni', 'Enya'],
     correct_answer: 'Vangelis',
     incorrect_answers: ['Kitaro', 'Yanni', 'Enya']
