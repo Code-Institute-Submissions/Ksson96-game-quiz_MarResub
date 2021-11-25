@@ -6,10 +6,10 @@ let currentQuestion = document.getElementById('question');
 let nextButton = document.getElementById('next');
 nextButton.addEventListener('click', nextQuestion);
 let questionIndex = 0;
-let option1 = currentOptions[0];
-let option2 = currentOptions[1];
-let option3 = currentOptions[2];
-let option4 = currentOptions[3];
+let option1;
+let option2;
+let option3;
+let option4;
 let questions = [];
 let correct;
 let wrong = [];
@@ -48,12 +48,11 @@ function nextQuestion (event) {
         currentQuestion.innerText = questions[questionIndex];
         currentOptions = options[questionIndex];
         console.log(currentOptions);
-      /*  currentOption1 = gameContent[questionIndex].options[0];
-        currentOption2 = gameContent[questionIndex].options[1];
-        currentOption3 = gameContent[questionIndex].options[2];
-        currentOption4 = gameContent[questionIndex].options[3];
-        console.log(currentOption1); */
-        
+        option1 = currentOptions[0];
+        option2 = currentOptions[1];
+        option3 = currentOptions[2];
+        option4 = currentOptions[3];
+        console.log(option1);
      
         
     } 
@@ -70,7 +69,7 @@ function displayQuestion() {
     }
     currentOptions = options[questionIndex];
     console.log(currentOptions);
-    
+    currentQuestion.innerText = gameContent[questionIndex].question;
     
     
 
@@ -78,12 +77,12 @@ function displayQuestion() {
    
    /* for (let option of currentOptions) {}*/
      /*   for (let i = 0; i < 4; i++) {*/
-        currentOption1 = gameContent[questionIndex].options[0];
+      /*  currentOption1 = gameContent[questionIndex].options[0];
         currentOption2 = gameContent[questionIndex].options[1];
         currentOption3 = gameContent[questionIndex].options[2];
         currentOption4 = gameContent[questionIndex].options[3];
         
-        console.log(currentOption1);
+        console.log(currentOption1); */
             console.log(currentQuestion);
             
             
@@ -93,7 +92,7 @@ function displayQuestion() {
 
       /*  } */
 
-      currentQuestion.innerText = gameContent[questionIndex].question;
+      
     }
     
 
