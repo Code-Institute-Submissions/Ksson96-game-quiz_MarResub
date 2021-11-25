@@ -32,10 +32,10 @@ function checkAnswer() {
 function storeOptions() {
     currentQuestion.innerText = questions[questionIndex];
     currentOptions = options[questionIndex];
-    option1 = currentOptions[0];
-    option2 = currentOptions[1];
-    option3 = currentOptions[2];
-    option4 = currentOptions[3];
+    option1.innerText = currentOptions[0];
+    option2.innerText = currentOptions[1];
+    option3.innerText = currentOptions[2];
+    option4.innerText = currentOptions[3];
 }
 
 function calculateScore() {
