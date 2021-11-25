@@ -30,6 +30,8 @@ function checkAnswer() {
 }
 
 function storeOptions() {
+    currentQuestion.innerText = questions[questionIndex];
+    currentOptions = options[questionIndex];
     option1 = currentOptions[0];
     option2 = currentOptions[1];
     option3 = currentOptions[2];
@@ -45,12 +47,6 @@ function nextQuestion(event) {
 
     if (questions.length > questionIndex + 1) {
         questionIndex++;
-        currentQuestion.innerText = questions[questionIndex];
-        currentOptions = options[questionIndex];
-       /* option1 = currentOptions[0];
-        option2 = currentOptions[1];
-        option3 = currentOptions[2];
-        option4 = currentOptions[3]; */
         storeOptions();
         console.log(option1);
     }
@@ -64,13 +60,8 @@ function displayQuestion() {
         options.push(gameContent[i].options);
 
     }
-    currentOptions = options[questionIndex];
-    currentQuestion.innerText = gameContent[questionIndex].question;
     storeOptions();
-   /* option1 = currentOptions[0];
-    option2 = currentOptions[1];
-    option3 = currentOptions[2];
-    option4 = currentOptions[3]; */
+    
     console.log(option1);
 
 }
