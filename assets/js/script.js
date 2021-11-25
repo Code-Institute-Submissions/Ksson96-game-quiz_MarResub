@@ -1,18 +1,18 @@
-const startHeading = document.getElementById('start-heading');
 const gameContainer = document.getElementById('game-container');
-const gameStart = document.getElementById('start')
+const startHeading = document.getElementById('start-heading');
 const currentQuestion = document.getElementById('question');
 const nextButton = document.getElementById('next');
-let questionIndex = 0;
+const gameStart = document.getElementById('start')
 let option1 = document.getElementById('option1');
 let option2 = document.getElementById('option2');
 let option3 = document.getElementById('option3');
 let option4 = document.getElementById('option4');
+let questionIndex = 0;
 let questions = [];
-let correct;
-let wrong = [];
 let options = [];
+let wrong = [];
 let currentOptions;
+let correct;
 nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
 
