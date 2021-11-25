@@ -11,6 +11,8 @@ let option2;
 let option3;
 let option4;
 let questions = [];
+let correct;
+let wrong = [];
 
 
 function runGame() {
@@ -58,10 +60,10 @@ function displayQuestion() {
     
     for(let i = 0; i < gameContent.length; i++) {
         questions.push(gameContent[i].question);
-        
-        
-        
+           
     }
+
+    
     
     
 
