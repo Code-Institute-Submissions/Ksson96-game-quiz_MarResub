@@ -10,6 +10,7 @@ let option1;
 let option2;
 let option3;
 let option4;
+let questions = [];
 
 
 function runGame() {
@@ -38,9 +39,9 @@ function nextQuestion (event) {
         
         console.log(questionIndex);
         
-        if (questionIndex < gameContent.length) {
+        if (questions.length > questionIndex + 1) {
            questionIndex++;
-        currentQuestion.innerText = questions[questionIndex].question;
+        currentQuestion.innerText = questions[questionIndex];
         currentOption1 = gameContent[questionIndex].options[0];
         currentOption2 = gameContent[questionIndex].options[1];
         currentOption3 = gameContent[questionIndex].options[2];
@@ -52,7 +53,7 @@ function nextQuestion (event) {
     } 
 }
 
-var questions = [];
+
 function displayQuestion() {
     
     for(let i = 0; i < gameContent.length; i++) {
