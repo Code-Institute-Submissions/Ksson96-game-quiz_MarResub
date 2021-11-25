@@ -15,7 +15,6 @@ let wrong = [];
 let options = [];
 let currentOptions;
 
-
 function runGame() {
     let startHeading = document.getElementById('start-heading');
     let gameContainer = document.getElementById('game-container');
@@ -30,30 +29,30 @@ function checkAnswer() {
 
 }
 
+function storeOptions() {
+    option1 = currentOptions[0];
+    option2 = currentOptions[1];
+    option3 = currentOptions[2];
+    option4 = currentOptions[3];
+}
+
 function calculateScore() {
 
 }
 
 function nextQuestion(event) {
-
-
-
-
     console.log(questionIndex);
 
     if (questions.length > questionIndex + 1) {
         questionIndex++;
         currentQuestion.innerText = questions[questionIndex];
         currentOptions = options[questionIndex];
-        console.log(currentOptions);
-        option1 = currentOptions[0];
+       /* option1 = currentOptions[0];
         option2 = currentOptions[1];
         option3 = currentOptions[2];
-        option4 = currentOptions[3];
-
-
-
-
+        option4 = currentOptions[3]; */
+        storeOptions();
+        console.log(option1);
     }
 }
 
@@ -64,44 +63,21 @@ function displayQuestion() {
         questions.push(gameContent[i].question);
         options.push(gameContent[i].options);
 
-
     }
     currentOptions = options[questionIndex];
-    console.log(currentOptions);
     currentQuestion.innerText = gameContent[questionIndex].question;
-    option1 = currentOptions[0];
+    storeOptions();
+   /* option1 = currentOptions[0];
     option2 = currentOptions[1];
     option3 = currentOptions[2];
-    option4 = currentOptions[3];
-
-
-
-
-    /* for (let option of currentOptions) {}*/
-    /*   for (let i = 0; i < 4; i++) {*/
-    /*  currentOption1 = gameContent[questionIndex].options[0];
-      currentOption2 = gameContent[questionIndex].options[1];
-      currentOption3 = gameContent[questionIndex].options[2];
-      currentOption4 = gameContent[questionIndex].options[3];
-      
-      console.log(currentOption1); */
-    console.log(currentQuestion);
-
-
-
-
-    /*  } */
-
+    option4 = currentOptions[3]; */
+    console.log(option1);
 
 }
-
-
-
 
 function displayResults() {
 
 }
-
 
 /* Questions and Answers */
 
