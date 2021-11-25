@@ -1,7 +1,6 @@
 const gameStart = document.getElementById('start')
 gameStart.addEventListener('click', runGame);
 let currentQuestion = document.getElementById('question');
-/*let currentOptions = document.getElementsByClassName('options');*/
 let nextButton = document.getElementById('next');
 nextButton.addEventListener('click', nextQuestion);
 let questionIndex = 0;
@@ -15,6 +14,7 @@ let wrong = [];
 let options = [];
 let currentOptions;
 
+/*Hide Start Page and Show First Question */
 function runGame() {
     let startHeading = document.getElementById('start-heading');
     let gameContainer = document.getElementById('game-container');
@@ -29,6 +29,7 @@ function checkAnswer() {
 
 }
 
+/* Update HTML Text Content */
 function storeOptions() {
     currentQuestion.innerText = questions[questionIndex];
     currentOptions = options[questionIndex];
@@ -42,17 +43,15 @@ function calculateScore() {
 
 }
 
+/* Jump to Next Question on Button Click */
 function nextQuestion(event) {
-    console.log(questionIndex);
-
     if (questions.length > questionIndex + 1) {
         questionIndex++;
         storeOptions();
-        console.log(option1);
     }
 }
 
-
+/* Loop Questions + Options and Store in Empty Array */
 function displayQuestion() {
 
     for (let i = 0; i < gameContent.length; i++) {
@@ -61,8 +60,6 @@ function displayQuestion() {
 
     }
     storeOptions();
-    console.log(option1);
-
 }
 
 function displayResults() {
