@@ -1,8 +1,8 @@
+const startHeading = document.getElementById('start-heading');
+const gameContainer = document.getElementById('game-container');
 const gameStart = document.getElementById('start')
-gameStart.addEventListener('click', runGame);
-let currentQuestion = document.getElementById('question');
-let nextButton = document.getElementById('next');
-nextButton.addEventListener('click', nextQuestion);
+const currentQuestion = document.getElementById('question');
+const nextButton = document.getElementById('next');
 let questionIndex = 0;
 let option1 = document.getElementById('option1');
 let option2 = document.getElementById('option2');
@@ -13,11 +13,11 @@ let correct;
 let wrong = [];
 let options = [];
 let currentOptions;
+nextButton.addEventListener('click', nextQuestion);
+gameStart.addEventListener('click', runGame);
 
 /*Hide Start Page and Show First Question */
 function runGame() {
-    let startHeading = document.getElementById('start-heading');
-    let gameContainer = document.getElementById('game-container');
     gameStart.classList.add('hide');
     startHeading.classList.add('hide');
     gameContainer.classList.remove('hide');
