@@ -5,10 +5,10 @@ let currentQuestion = document.getElementById('question');
 let nextButton = document.getElementById('next');
 nextButton.addEventListener('click', nextQuestion);
 let questionIndex = 0;
-let option1;
-let option2;
-let option3;
-let option4;
+let option1 = document.getElementById('option1');
+let option2 = document.getElementById('option2');
+let option3 = document.getElementById('option3');
+let option4 = document.getElementById('option4');
 let questions = [];
 let correct;
 let wrong = [];
@@ -61,7 +61,6 @@ function displayQuestion() {
 
     }
     storeOptions();
-    
     console.log(option1);
 
 }
