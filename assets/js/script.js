@@ -13,6 +13,7 @@ let option4;
 let questions = [];
 let correct;
 let wrong = [];
+let options = [];
 
 
 function runGame() {
@@ -49,7 +50,7 @@ function nextQuestion (event) {
         currentOption3 = gameContent[questionIndex].options[2];
         currentOption4 = gameContent[questionIndex].options[3];
         console.log(currentOption1);
-        
+        console.log(options);
      
         
     } 
@@ -60,6 +61,7 @@ function displayQuestion() {
     
     for(let i = 0; i < gameContent.length; i++) {
         questions.push(gameContent[i].question);
+        options.push(gameContent[i].options);
            
     }
 
@@ -99,6 +101,7 @@ function displayQuestion() {
  }
 
 
+/* Questions and Answers */
 
 const gameContent =  [{
        question: "In the movie &ldquo;The Iron Giant,&rdquo; this character is the protagonist.",
