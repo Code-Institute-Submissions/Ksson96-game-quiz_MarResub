@@ -3,12 +3,15 @@ Movie Quiz is a website designed to let users test their knowledge of the cinema
 
 ## Contents
 
-* Project Goals
-* User Goals
-* User Stories
-* Design Goals
-* Design Choices 
-- Fonts
-- Color Scheme
-
-* Features
+- Project Goals
+- User Goals
+- User Stories
+- Design Goals
+- Design Choices 
+  - Fonts
+  - Color Scheme
+- Features
+  - Start
+  - Questions 
+  - Answers
+  - 
