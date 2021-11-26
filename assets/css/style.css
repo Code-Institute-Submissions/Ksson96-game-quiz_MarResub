@@ -135,16 +135,6 @@ button:hover {
 
 }
 
-
-#next-container {
-    text-align: right;
-    padding-bottom: 10px;
-    height: auto;
-
-}
-
-
-
 #result {
     height: 100%;
     width: 100%;
@@ -200,25 +190,10 @@ button:hover {
     }
 
     /* Game page */
-
-
-
-
     .options {
         margin-top: 20px;
         font-size: small;
     }
-
-
-
-    #next-container {
-        text-align: center;
-        margin: 0;
-
-
-
-    }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -271,20 +246,5 @@ button:hover {
     #main-container {
         width: 80%;
     }
-
-}
-
-@media only screen and (min-width: 1201px) {
-    #next {
-        height: auto;
-        font-size: 22px;
-        width: 30%;
-
-    }
-
-    #next-container {
-        padding-right: 10%;
-    }
-
 
 }

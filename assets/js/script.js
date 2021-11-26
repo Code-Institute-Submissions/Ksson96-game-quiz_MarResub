@@ -2,7 +2,6 @@ const gameContainer = document.getElementById('game-container');
 const startHeading = document.getElementById('start-heading');
 const resultPage = document.getElementById('result');
 const currentQuestion = document.getElementById('question');
-const nextButton = document.getElementById('next');
 const gameStart = document.getElementById('start');
 const finalResult = document.getElementById('score-number');
 const playAgainButton = document.getElementById('play-again');
@@ -13,7 +12,6 @@ let currentLevel = [];
 let correctAnswer;
 let currentScore = 0;
 
-nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
 playAgainButton.addEventListener('click', playAgain);
 
