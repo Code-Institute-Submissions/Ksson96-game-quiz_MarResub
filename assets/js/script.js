@@ -34,10 +34,23 @@ function increaseScore() {
 function checkAnswer(userChoice) {
     if (userChoice == thisLevel.correct_answer) {
         increaseScore();
+        Swal.fire({
+            icon: 'success',
+            title: 'Correct!',
+            showConfirmButton: false,
+            timer: 1500
+          })
         
         nextQuestion();
     } else {
-        nextQuestion();
+        Swal.fire({
+            icon: 'error',
+            title: 'Wrong!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          nextQuestion();
+        
         
     }
 }
