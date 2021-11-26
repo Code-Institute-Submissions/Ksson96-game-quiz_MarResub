@@ -4,16 +4,18 @@ const resultPage = document.getElementById('result');
 const currentQuestion = document.getElementById('question');
 const nextButton = document.getElementById('next');
 const gameStart = document.getElementById('start');
+const finalResult = document.getElementById('score-number');
+const playAgainButton = document.getElementById('play-again');
 let currentOptions = document.getElementsByClassName('options');
 let thisLevel;
 let questionIndex = 0;
 let currentLevel = [];
 let correctAnswer;
 let currentScore = 0;
-let finalResult = document.getElementById('score');
 
 nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
+playAgainButton.addEventListener('click', playAgain);
 
 /*Hide Start Page and Show First Question */
 function runGame() {
@@ -91,6 +93,13 @@ function displayResults() {
     gameContainer.classList.add('hide');
     resultPage.classList.remove('hide');
 
+}
+
+function playAgain () {
+    resultPage.classList.add('hide');
+    questionIndex = 0;
+    currentLevel = [];
+    runGame();
 }
 
 /* Questions and Answers */
