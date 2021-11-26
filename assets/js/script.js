@@ -61,6 +61,7 @@ function nextQuestion(event) {
         questionIndex++;
         storeOptions();
     }
+    displayResults();
 }
 
 /* Loop Questions + Options and Store in Empty Array */
