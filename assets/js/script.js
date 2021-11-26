@@ -48,12 +48,17 @@ function checkAnswer(userChoice) {
             title: 'Wrong!',
             showConfirmButton: false,
             timer: 1500
+          }).then (() => {
+            nextQuestion();
           })
-          nextQuestion();
+
+
+          }
+          
         
         
     }
-}
+
 
 /* Update HTML Text Content */
 function storeOptions() {
