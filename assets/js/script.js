@@ -24,14 +24,17 @@ function runGame() {
 }
 
 function increaseScore() {
-    currentScore + 1;
+    finalResult = currentScore + 1;
+    console.log(finalResult);
 
 }
 
 function checkAnswer(userChoice) {
     if (userChoice == thisLevel.correct_answer) {
-        increaseScore()
+        increaseScore();
+        nextQuestion();
     } else {
+        nextQuestion();
         
     }
 
@@ -54,7 +57,7 @@ function storeOptions() {
 
 /* Jump to Next Question on Button Click */
 function nextQuestion(event) {
-    if (questions.length > questionIndex + 1) {
+    if (gameContent.length > questionIndex + 1) {
         questionIndex++;
         storeOptions();
     }
