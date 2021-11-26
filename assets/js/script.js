@@ -75,7 +75,9 @@ function nextQuestion(event) {
     if (gameContent.length > questionIndex + 1) {
         questionIndex++;
         storeOptions();
-    }else {displayResults();}
+    } else {
+        displayResults();
+    }
 }
 
 /* Loop Questions + Options and Store in Empty Array */
