@@ -25,7 +25,12 @@ function increaseScore() {
 
 }
 
-function checkAnswer() {
+function checkAnswer(userChoice) {
+    if (userChoice == thisLevel.correct_answer) {
+        console.log('right')
+    } else console.log('wrong')
+
+        
     
 }
 
