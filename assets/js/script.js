@@ -87,6 +87,7 @@ for (option of currentOptions) {
 
 
 function displayResults() {
+    gameContainer.classList.add('hide');
 
 }
 
