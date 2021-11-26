@@ -21,9 +21,12 @@ function runGame() {
 
 }
 
+function increaseScore() {
+
+}
+
 function checkAnswer() {
     
-
 }
 
 /* Update HTML Text Content */
@@ -61,6 +64,14 @@ function displayQuestion() {
     storeOptions();
 }
 
+for (option of currentOptions) {
+    option.addEventListener('click', (event) => {
+        let userChoice = event.target.innerText;
+        checkAnswer(userChoice);
+    })
+
+        
+}
 
 
 
