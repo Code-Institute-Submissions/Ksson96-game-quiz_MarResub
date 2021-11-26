@@ -8,6 +8,7 @@ let thisLevel;
 let questionIndex = 0;
 let currentLevel = [];
 let correctAnswer;
+let currentScore = 0;
 
 nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
@@ -22,13 +23,16 @@ function runGame() {
 }
 
 function increaseScore() {
+    currentScore + 1;
 
 }
 
 function checkAnswer(userChoice) {
     if (userChoice == thisLevel.correct_answer) {
-        console.log('right')
-    } else console.log('wrong')
+        increaseScore()
+    } else {
+        
+    }
 
         
     
@@ -46,9 +50,6 @@ function storeOptions() {
 
 }
 
-function calculateScore() {
-
-}
 
 /* Jump to Next Question on Button Click */
 function nextQuestion(event) {
