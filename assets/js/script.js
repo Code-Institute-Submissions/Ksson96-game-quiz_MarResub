@@ -1,5 +1,6 @@
 const gameContainer = document.getElementById('game-container');
 const startHeading = document.getElementById('start-heading');
+const resultPage = document.getElementById('result');
 const currentQuestion = document.getElementById('question');
 const nextButton = document.getElementById('next');
 const gameStart = document.getElementById('start');
@@ -88,6 +89,7 @@ for (option of currentOptions) {
 
 function displayResults() {
     gameContainer.classList.add('hide');
+    resultPage.classList.remove('hide');
 
 }
 
