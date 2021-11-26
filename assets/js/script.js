@@ -7,12 +7,14 @@ let option1 = document.getElementById('option1');
 let option2 = document.getElementById('option2');
 let option3 = document.getElementById('option3');
 let option4 = document.getElementById('option4');
+let thisLevel;
 let questionIndex = 0;
 let questions = [];
 let options = [];
 let wrong = [];
 let currentOptions;
 let correct;
+
 nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
 
@@ -26,11 +28,13 @@ function runGame() {
 }
 
 function checkAnswer() {
+    
 
 }
 
 /* Update HTML Text Content */
 function storeOptions() {
+    thisLevel = 
     currentQuestion.innerText = questions[questionIndex];
     currentOptions = options[questionIndex];
     option1.innerText = currentOptions[0];
@@ -57,6 +61,7 @@ function displayQuestion() {
     for (let i = 0; i < gameContent.length; i++) {
         questions.push(gameContent[i].question);
         options.push(gameContent[i].options);
+        currentLevel.push(gameContent[i]);
 
     }
     storeOptions();
