@@ -9,6 +9,7 @@ let questionIndex = 0;
 let currentLevel = [];
 let correctAnswer;
 let currentScore = 0;
+let finalResult = document.getElementById('score');
 
 nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
