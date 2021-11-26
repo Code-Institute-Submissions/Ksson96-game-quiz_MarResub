@@ -2,15 +2,12 @@ const gameContainer = document.getElementById('game-container');
 const startHeading = document.getElementById('start-heading');
 const currentQuestion = document.getElementById('question');
 const nextButton = document.getElementById('next');
-const gameStart = document.getElementById('start')
-let thisLevel;
-let currentLevel = [];
-let questionIndex = 0;
-let questions = [];
-let options = [];
-let wrong = [];
+const gameStart = document.getElementById('start');
 let currentOptions = document.getElementsByClassName('options');
-let correct;
+let thisLevel;
+let questionIndex = 0;
+let currentLevel = [];
+let correctAnswer;
 
 nextButton.addEventListener('click', nextQuestion);
 gameStart.addEventListener('click', runGame);
@@ -57,8 +54,6 @@ function nextQuestion(event) {
 function displayQuestion() {
 
     for (let i = 0; i < gameContent.length; i++) {
-        questions.push(gameContent[i].question);
-        options.push(gameContent[i].options);
         currentLevel.push(gameContent[i]);
         console.log(currentLevel);
 
