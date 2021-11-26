@@ -25,7 +25,7 @@ function runGame() {
 }
 
 function increaseScore() {
-    finalResult = currentScore + 1;
+    currentScore++;
     console.log(finalResult);
 
 }
@@ -61,8 +61,7 @@ function nextQuestion(event) {
     if (gameContent.length > questionIndex + 1) {
         questionIndex++;
         storeOptions();
-    }
-    displayResults();
+    }else {displayResults();}
 }
 
 /* Loop Questions + Options and Store in Empty Array */
@@ -88,6 +87,7 @@ for (option of currentOptions) {
 
 
 function displayResults() {
+    finalResult.innerText = currentScore;
     gameContainer.classList.add('hide');
     resultPage.classList.remove('hide');
 
