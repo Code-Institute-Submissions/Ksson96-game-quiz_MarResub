@@ -39,9 +39,9 @@ function checkAnswer(userChoice) {
             title: 'Correct!',
             showConfirmButton: false,
             timer: 1500
+        }).then (() => {
+            nextQuestion();
           })
-        
-        nextQuestion();
     } else {
         Swal.fire({
             icon: 'error',
