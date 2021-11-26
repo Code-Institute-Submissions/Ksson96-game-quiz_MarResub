@@ -28,21 +28,18 @@ function runGame() {
 
 function increaseScore() {
     currentScore++;
-    console.log(finalResult);
 
 }
 
 function checkAnswer(userChoice) {
     if (userChoice == thisLevel.correct_answer) {
         increaseScore();
+        
         nextQuestion();
     } else {
         nextQuestion();
         
     }
-
-        
-    
 }
 
 /* Update HTML Text Content */
@@ -56,7 +53,6 @@ function storeOptions() {
     
 
 }
-
 
 /* Jump to Next Question on Button Click */
 function nextQuestion(event) {
@@ -86,8 +82,6 @@ for (option of currentOptions) {
         
 }
 
-
-
 function displayResults() {
     finalResult.innerText = currentScore;
     gameContainer.classList.add('hide');
@@ -99,6 +93,7 @@ function playAgain () {
     resultPage.classList.add('hide');
     questionIndex = 0;
     currentLevel = [];
+    currentScore = 0;
     runGame();
 }
 
