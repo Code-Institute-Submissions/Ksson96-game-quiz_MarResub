@@ -34,7 +34,7 @@ function checkAnswer() {
 
 /* Update HTML Text Content */
 function storeOptions() {
-    thisLevel = 
+    thisLevel = currentLevel[questionIndex];
     currentQuestion.innerText = questions[questionIndex];
     currentOptions = options[questionIndex];
     option1.innerText = currentOptions[0];
