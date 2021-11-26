@@ -3,16 +3,13 @@ const startHeading = document.getElementById('start-heading');
 const currentQuestion = document.getElementById('question');
 const nextButton = document.getElementById('next');
 const gameStart = document.getElementById('start')
-let option1 = document.getElementById('option1');
-let option2 = document.getElementById('option2');
-let option3 = document.getElementById('option3');
-let option4 = document.getElementById('option4');
 let thisLevel;
+let currentLevel = [];
 let questionIndex = 0;
 let questions = [];
 let options = [];
 let wrong = [];
-let currentOptions;
+let currentOptions = document.getElementsByClassName('options');
 let correct;
 
 nextButton.addEventListener('click', nextQuestion);
@@ -35,12 +32,13 @@ function checkAnswer() {
 /* Update HTML Text Content */
 function storeOptions() {
     thisLevel = currentLevel[questionIndex];
-    currentQuestion.innerText = questions[questionIndex];
-    currentOptions = options[questionIndex];
-    option1.innerText = currentOptions[0];
-    option2.innerText = currentOptions[1];
-    option3.innerText = currentOptions[2];
-    option4.innerText = currentOptions[3];
+    currentQuestion.innerText = thisLevel.question;
+    currentOptions[0].innerText = thisLevel.options[0];
+    currentOptions[1].innerText = thisLevel.options[1];
+    currentOptions[2].innerText = thisLevel.options[2];
+    currentOptions[3].innerText = thisLevel.options[3];
+    
+
 }
 
 function calculateScore() {
@@ -62,10 +60,14 @@ function displayQuestion() {
         questions.push(gameContent[i].question);
         options.push(gameContent[i].options);
         currentLevel.push(gameContent[i]);
+        console.log(currentLevel);
 
     }
     storeOptions();
 }
+
+
+
 
 function displayResults() {
 
