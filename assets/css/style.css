@@ -14,6 +14,7 @@ body {
 .hide {
     display: none;
 }
+
 /* Header Content */
 
 h1 {
@@ -72,7 +73,6 @@ button:hover {
 
     font-family: 'Peralta', sans-serif;
     display: block;
-    font-size: 2rem;
     width: 60%;
     margin: 0 auto;
     margin-top: 10rem;
@@ -81,7 +81,7 @@ button:hover {
 
 #start-heading {
     color: white;
-    font-size: 48px;
+    font-size: 4rem;
     letter-spacing: 4px;
     text-align: center;
     margin-top: 140px;
@@ -96,10 +96,10 @@ button:hover {
 
 #question-container {
     color: white;
-    text-align: center;   
+    text-align: center;
     width: 100%;
     padding-top: 2rem;
-    overflow-wrap: break-word;  
+    overflow-wrap: break-word;
 }
 
 #question {
@@ -110,7 +110,7 @@ button:hover {
 }
 
 #option-container {
-    
+
     text-align: center;
     width: 100%;
     padding-top: 3rem;
@@ -123,7 +123,8 @@ button:hover {
     padding: 2rem 2rem 2rem 2rem;
 }
 
-#option3, #option4 {
+#option3,
+#option4 {
     margin-top: 2%;
     margin-bottom: 0;
 }
@@ -195,7 +196,7 @@ button:hover {
 
     .options {
         font-size: 1.2rem;
-        
+
     }
 
     #progress-container {
@@ -222,31 +223,32 @@ button:hover {
 
     #start-heading {
         font-size: 3rem;
+    }
 }
 
-    @media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) {
 
-    
-        #start {
-            font-size: 3rem;
-        }
-
-        .options {
-            width: 35%;
-            margin: 5% 5% 0% 5%;
-        }
-
-        #option3, #option4 {
-            margin-top: 10%;
-        }
-
-        #question {
-            text-align: center;
-            font-size: 3rem;
-        
-        }
-
-        #progress-container {
-            padding-top: 8rem;
-        }
+    #start {
+        font-size: 3rem;
     }
+
+    .options {
+        width: 35%;
+        margin: 5% 5% 0% 5%;
+    }
+
+    #option3,
+    #option4 {
+        margin-top: 10%;
+    }
+
+    #question {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    #progress-container {
+        padding-top: 8rem;
+    }
+}
