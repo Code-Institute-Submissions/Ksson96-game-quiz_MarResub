@@ -30,7 +30,7 @@ h1 {
 
 #main-container {
     background-color: rgb(1, 33, 51);
-    width: 60%;
+    width: 80%;
     height: 70vh;
     margin: 0 auto;
     margin-top: 40px;
@@ -68,9 +68,10 @@ button:hover {
 
     font-family: 'Peralta', sans-serif;
     display: block;
-    margin: 0.4em auto;
     font-size: 2rem;
     width: 60%;
+    margin: 0 auto;
+    margin-top: 10rem;
 }
 
 #start-heading {
@@ -93,32 +94,34 @@ button:hover {
     color: white;
     text-align: center;
     height: 20%;
-    padding-top: 3rem;
-    width: 100%;
     margin: 0 auto;
+    margin-top: 4rem;
+    width: 100%;
+    
 }
 
 #question {
     color: white;
     margin: 0;
-    text-align: center;
-    font-size: auto;
 }
 
 #option-container {
     height: 60%;
     text-align: center;
     width: 100%;
+    padding-top: 3rem;
 }
 
 .options {
-    font-size: larger;
-    width: 35%;
-    height: auto;
-    margin: 10% 5% 0% 5%;
+    font-size: 1.5rem;
+    width: 45%;
+    margin: 5% 1.5% 5% 1.5%;
+    padding: 2rem 2rem 2rem 2rem;
 
+}
 
-
+#option1, #option2 {
+    margin-top: 0;
 }
 
 #progress {
@@ -187,10 +190,25 @@ button:hover {
         letter-spacing: 0;
     }
 
+    #question {
+        color: white;
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+    
+    }
+
 
 
     /* Game page */
-    .options {}
+    .options {
+        font-size: 1.2rem;
+
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -198,40 +216,28 @@ button:hover {
         width: 90%;
     }
 
-    #start-heading {
-        margin: 0;
-        padding-top: 20%;
-        font-size: 36px;
-        letter-spacing: 0;
-    }
-
-
-
-
-
-
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #main-container {
-        width: 80%;
-    }
+   
 
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
 
-    #main-container {
-        width: 80%;
-    }
+    
 
 }
     @media only screen and (min-width: 1201px) {
 
+    
         #start {
-            margin: 0 auto;
-            margin-top: 60px;
             font-size: 3rem;
+        }
+
+        .options {
+            width: 35%;
+            margin: 10% 5% 0% 5%;
         }
     }
