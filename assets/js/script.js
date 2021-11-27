@@ -21,12 +21,10 @@ function runGame() {
     startHeading.classList.add('hide');
     gameContainer.classList.remove('hide');
     displayQuestion();
-
 }
 
 function increaseScore() {
     currentScore++;
-
 }
 
 function checkAnswer(userChoice) {
@@ -49,25 +47,16 @@ function checkAnswer(userChoice) {
           }).then (() => {
             nextQuestion();
           })
-
-
           }
-          
-        
-        
     }
-
-
 /* Update HTML Text Content */
 function storeOptions() {
     thisLevel = currentLevel[questionIndex];
     currentQuestion.innerText = thisLevel.question;
-    currentOptions[0].innerText = thisLevel.options[0];
-    currentOptions[1].innerText = thisLevel.options[1];
-    currentOptions[2].innerText = thisLevel.options[2];
-    currentOptions[3].innerText = thisLevel.options[3];
-    
 
+    for (let i = 0; i < 4; i++) {
+        currentOptions[i].innerText = thisLevel.options[i];
+    }
 }
 
 /* Jump to Next Question on Button Click */
