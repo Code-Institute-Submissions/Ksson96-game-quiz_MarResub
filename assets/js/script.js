@@ -23,10 +23,12 @@ function runGame() {
     displayQuestion();
 }
 
+/*Increase current score count by +1 */
 function increaseScore() {
     currentScore++;
 }
 
+/*Checks if User Choice is Correct and Gives Alert Feedback */
 function checkAnswer(userChoice) {
     if (userChoice == thisLevel.correct_answer) {
         increaseScore();
@@ -35,20 +37,20 @@ function checkAnswer(userChoice) {
             title: 'Correct!',
             showConfirmButton: false,
             timer: 1500
-        }).then (() => {
+        }).then(() => {
             nextQuestion();
-          })
+        })
     } else {
         Swal.fire({
             icon: 'error',
             title: 'Wrong!',
             showConfirmButton: false,
             timer: 1500
-          }).then (() => {
+        }).then(() => {
             nextQuestion();
-          })
-          }
+        })
     }
+}
 /* Update HTML Text Content */
 function storeOptions() {
     thisLevel = currentLevel[questionIndex];
@@ -80,15 +82,17 @@ function displayQuestion() {
     storeOptions();
 }
 
+/*Add Event Listeners to Options to Store Users Chosen Answer */
 for (option of currentOptions) {
     option.addEventListener('click', (event) => {
         let userChoice = event.target.innerText;
         checkAnswer(userChoice);
     })
 
-        
+
 }
 
+/*Hides Game Content and Displays Result Page and Score */
 function displayResults() {
     finalResult.innerText = currentScore;
     gameContainer.classList.add('hide');
@@ -96,7 +100,8 @@ function displayResults() {
 
 }
 
-function playAgain () {
+/*Reset Score and Run Game Again */
+function playAgain() {
     resultPage.classList.add('hide');
     questionIndex = 0;
     currentLevel = [];
