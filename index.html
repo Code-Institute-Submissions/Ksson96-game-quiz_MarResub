@@ -13,8 +13,10 @@
 </head>
 
 <body>
-    <h1 id="logo">Movie-Quiz!</h1>
-    <div id="main-container">
+    <header>
+        <h1 id="logo">Movie-Quiz!</h1>
+    </header>
+    <section id="main-container">
         <h2 id="start-heading">Are you ready?</h2>
         <button id="start">Ready!</button>
         <div id="game-container" class="hide">
@@ -27,16 +29,19 @@
                 <button id="option3" class="options"></button>
                 <button id="option4" class="options"></button>
             </div>
+            <div id="progress-container" class="hide">Question <span id="progress"></span> / 10</div>
         </div>
         <div id="result" class="hide">
-            <h2 id="score">Congratulations! You completed the quiz! <br> <br> You scored <span id="score-number"></span> out of 10.</h2>
+            <h2 id="score">Congratulations! You completed the quiz! <br> <br> You scored <span id="score-number"></span>
+                out of 10.</h2>
             <h3 id="play-again-heading">Would you like to play again?</h3>
             <button id="play-again">Play again!</button>
         </div>
-        
-    </div>
-    <div id="progress" class="hide">Question 3 / 14</div>
 
+    </section>
+    <footer>
+    
+</footer>
     <script src="https://kit.fontawesome.com/160f76309e.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

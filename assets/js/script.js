@@ -5,12 +5,16 @@ const currentQuestion = document.getElementById('question');
 const gameStart = document.getElementById('start');
 const finalResult = document.getElementById('score-number');
 const playAgainButton = document.getElementById('play-again');
+let progress = document.getElementById('progress');
+let progressContainer = document.getElementById('progress-container');
 let currentOptions = document.getElementsByClassName('options');
-let thisLevel;
 let questionIndex = 0;
 let currentLevel = [];
 let correctAnswer;
 let currentScore = 0;
+let thisLevel = questionIndex + 1;
+
+
 
 gameStart.addEventListener('click', runGame);
 playAgainButton.addEventListener('click', playAgain);
@@ -20,6 +24,7 @@ function runGame() {
     gameStart.classList.add('hide');
     startHeading.classList.add('hide');
     gameContainer.classList.remove('hide');
+    progressContainer.classList.remove('hide');
     displayQuestion();
 }
 
@@ -65,6 +70,7 @@ function storeOptions() {
 function nextQuestion(event) {
     if (gameContent.length > questionIndex + 1) {
         questionIndex++;
+        incrementProgress()
         storeOptions();
     } else {
         displayResults();
@@ -76,10 +82,11 @@ function displayQuestion() {
 
     for (let i = 0; i < gameContent.length; i++) {
         currentLevel.push(gameContent[i]);
-        console.log(currentLevel);
 
     }
+    incrementProgress()
     storeOptions();
+    
 }
 
 /*Add Event Listeners to Options to Store Users Chosen Answer */
@@ -97,6 +104,7 @@ function displayResults() {
     finalResult.innerText = currentScore;
     gameContainer.classList.add('hide');
     resultPage.classList.remove('hide');
+    
 
 }
 
@@ -107,6 +115,10 @@ function playAgain() {
     currentLevel = [];
     currentScore = 0;
     runGame();
+}
+
+function incrementProgress() {
+    progress.innerText = questionIndex + 1;
 }
 
 /* Questions and Answers */

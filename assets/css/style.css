@@ -73,10 +73,6 @@ button:hover {
     font-size: xx-large;
     display: block;
     margin: 0.4em auto;
- 
-
-
-
 }
 
 #start-heading {
@@ -102,8 +98,6 @@ button:hover {
     padding-top: 5%;
     width: 90%;
     margin: 0 auto;
-
-
 }
 
 #question {
@@ -159,6 +153,17 @@ button:hover {
 #play-again {
     margin-top: 30px;
     font-size: x-large;
+}
+
+#progress-container {
+    text-align: center;
+    color:#fff;
+    font-size: 2em;
+    
+}
+
+#progress {
+    font-size: 1.5em;
 }
 
 
