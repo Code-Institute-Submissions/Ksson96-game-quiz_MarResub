@@ -14,4 +14,13 @@ Movie Quiz is a website designed to let users test their knowledge of the cinema
   - Start
   - Questions 
   - Answers
-  - 
+- Future Goals
+- Technologies Used
+- Testing
+  - Validation
+  - LightHouse
+  - Responsivness
+ - Known Bugs
+ - Deployment
+ - Credits
+ 
