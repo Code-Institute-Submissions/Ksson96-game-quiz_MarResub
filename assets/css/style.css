@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: palegoldenrod;
+    background-color: #eee8aa;
     font-family: 'Peralta', 'sans-seif';
 }
 
@@ -33,7 +33,7 @@ h1 {
 /* Main Container */
 
 #main-container {
-    background-color: rgb(1, 33, 51);
+    background-color: #012133;
     width: 80%;
     height: fit-content;
     margin: 0 auto;
