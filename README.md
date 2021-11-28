@@ -58,15 +58,15 @@ keep the lighthearted feel that the quiz is aimed to represent.
 ## Features
 # Header
 The header is simple and only consists of a logo to represent the quiz.
-![Image of logo](/workspace/game-quiz/docs/Header.JPG)
+![Image of logo](docs/Header.JPG)
 
 # Start Page
 The start page contains a button on which you can start the actual quiz.
-![Image of Start Button and Heading](/workspace/game-quiz/docs/Onload.JPG)
+![Image of Start Button and Heading](docs/Q & A.JPG)
 
 # Questions and Answers
 The Q/A page shows the question in the heading above and questions grouped in two options per line.
-![Image of game with question and possible answers](/workspace/game-quiz/docs/Q & A.JPG)
+![Image of game with question and possible answers](docs/Onload.JPG)
 
 ## Technologies Used
 # Languages
@@ -82,15 +82,25 @@ The Q/A page shows the question in the heading above and questions grouped in tw
 Testing the application had me try the different screen sizes using the dev tools chrome extension aswell. 
 As for the actual experience of the site I asked my girlfriend to try it out and give her feedback on it. 
 
+![Responsivness screenshot](docs/Responsive.JPG)
+
 - Validators
+  
   - HTML
-  ![Screenshot of HTML validation](/workspace/game-quiz/docs/HTML-validation.JPG)
+  
+  ![Screenshot of HTML validation](docs/HTML-validation.JPG)
+  
   - CSS
-  ![Screenshot of Jigsaw CSS validation](/workspace/game-quiz/docs/Jigsaw.JPG)
+  
+  ![Screenshot of Jigsaw CSS validation](docs/Jigsaw.JPG)
+  
   - JSHINT
-  ![Screenshot of JSHINT validation](/workspace/game-quiz/docs/JShint.JPG)
+  
+  ![Screenshot of JSHINT validation](docs/JShint.JPG)
+
 - Lighthouse
-![Screenshot of Lighthouse validation](/workspace/game-quiz/docs/Lighthouse.JPG)
+
+  ![Screenshot of Lighthouse validation](docs/Lighthouse.JPG)
 
 ## Known Bugs
 -No knows bugs
