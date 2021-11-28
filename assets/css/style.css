@@ -192,6 +192,7 @@ button:hover {
 
     #start {
         margin-bottom: 2rem;
+        margin-top: 5rem;
         font-size: 1rem;
     }
 
@@ -234,7 +235,6 @@ button:hover {
 
     #start {
         font-size: 1.5rem;
-        margin-top: 5rem;
     }
 }
 
