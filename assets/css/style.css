@@ -189,6 +189,10 @@ button:hover {
         letter-spacing: 0;
     }
 
+    #start {
+        margin-bottom: 5rem;
+    }
+
     #question {
         text-align: center;
         font-size: 2rem;
