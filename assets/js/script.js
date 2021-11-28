@@ -41,7 +41,7 @@ function checkAnswer(userChoice) {
             timer: 1500
         }).then(() => {
             nextQuestion();
-        })
+        });
     } else {
         Swal.fire({
             icon: 'error',
@@ -50,7 +50,7 @@ function checkAnswer(userChoice) {
             timer: 1500
         }).then(() => {
             nextQuestion();
-        })
+        });
     }
 }
 /* Update HTML Text Content */
@@ -67,7 +67,7 @@ function storeOptions() {
 function nextQuestion(event) {
     if (gameContent.length > questionIndex + 1) {
         questionIndex++;
-        incrementProgress()
+        incrementProgress();
         storeOptions();
     } else {
         displayResults();
@@ -81,17 +81,17 @@ function displayQuestion() {
         currentLevel.push(gameContent[i]);
 
     }
-    incrementProgress()
+    incrementProgress();
     storeOptions();
     
 }
 
 /*Add Event Listeners to Options to Store Users Chosen Answer */
-for (option of currentOptions) {
+for (let option of currentOptions) {
     option.addEventListener('click', (event) => {
         let userChoice = event.target.innerText;
         checkAnswer(userChoice);
-    })
+    });
 
 
 }
