@@ -22,7 +22,6 @@ playAgainButton.addEventListener('click', playAgain);
 /*Hide Start Page and Show First Question */
 function runGame() {
     gameStart.classList.add('hide');
-    startHeading.classList.add('hide');
     gameContainer.classList.remove('hide');
     progressContainer.classList.remove('hide');
     displayQuestion();
