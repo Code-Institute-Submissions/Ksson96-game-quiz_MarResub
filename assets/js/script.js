@@ -1,5 +1,4 @@
 const gameContainer = document.getElementById('game-container');
-const startHeading = document.getElementById('start-heading');
 const resultPage = document.getElementById('result');
 const currentQuestion = document.getElementById('question');
 const gameStart = document.getElementById('start-container');
@@ -10,7 +9,6 @@ let progressContainer = document.getElementById('progress-container');
 let currentOptions = document.getElementsByClassName('options');
 let questionIndex = 0;
 let currentLevel = [];
-let correctAnswer;
 let currentScore = 0;
 let thisLevel = questionIndex + 1;
 
