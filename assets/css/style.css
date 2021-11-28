@@ -57,7 +57,7 @@ button {
     display: inline-block;
     border: 0.1em solid #000000;
     font-weight: 300;
-    font-size: larger;
+    font-family: 'Peralta', sans-serif;
 
 }
 
@@ -77,6 +77,7 @@ button:hover {
     margin: 0 auto;
     margin-top: 10rem;
     margin-bottom: 10rem;
+    font-size: 3rem;
 }
 
 #start-heading {
@@ -113,7 +114,7 @@ button:hover {
 
     text-align: center;
     width: 100%;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .options {
@@ -191,11 +192,11 @@ button:hover {
 
     #start {
         margin-bottom: 5rem;
+        font-size: 1.5rem;
     }
 
     #question {
-        text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .options {
@@ -207,9 +208,7 @@ button:hover {
         padding-top: 2rem;
     }
 
-    #score {
-        font-size: 2rem;
-    }
+
 
     #play-again-heading {
         font-size: 2rem;
@@ -225,8 +224,16 @@ button:hover {
         padding-top: 2rem;
     }
 
+    #question {
+        font-size: 1.5rem;
+    }
+
     #start-heading {
         font-size: 3rem;
+    }
+
+    #start {
+        font-size: 1.5rem;
     }
 }
 
