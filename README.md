@@ -2,18 +2,21 @@
 Movie Quiz is a website designed to let users test their knowledge of the cinematic universe. When the users finishes the quiz, they will be presented with a total score in order to compare the results with their friends.
 
 ## Contents
-- Project Goals
-- User Goals
-- User Stories
-- Designer Goals
-- Design Choices 
-  - Fonts
-  - Color Scheme
-- Features
-  - Start
-  - Questions 
-  - Answers
-- Future Goals
+1. [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [User Stories](#user-stories)
+    - [Designer Goals](#designer-goals)
+      
+2. [Design Choices](#design-choices) 
+    - [Fonts](#fonts)
+    - [Color Scheme](#color-scheme)
+
+3. [Features](#features)
+    - [Start Page](#start-page)
+    - [Questions and Answers](#questions-and-answers) 
+    - [Future Goals](#future-goals)
+
+
 - Technologies Used
 - Testing
   - Validation
@@ -40,12 +43,12 @@ The quiz is targeted at the broader movie interested audience.
 - Satisfactory feedback on user inputs.
 
 ## Design Choices
-# Font
+### Fonts
 Since the quiz is quite simple in it's design, I felt like there was room for a more relaxed font style. 
 Therefore I decided to use 'Slackey' for the logo. To not exaggerate this I decided to use
 'Peralta' for my headings as this comes across as a slightly tuned down version of 'Slackey'.  
 
-# Color Scheme
+### Color Scheme
 Along with the nature of the fonts I decided to take a more colorful approach on the back & foreground-colors. 
 To give contrast to the bright orange buttons and white headings I chose a darker blue for the contents background while the body consists of a lighter beige color in order to
 keep the lighthearted feel that the quiz is aimed to represent.
@@ -56,25 +59,25 @@ keep the lighthearted feel that the quiz is aimed to represent.
 - Body Background: #eee8aa
 
 ## Features
-# Header
+### Header
 The header is simple and only consists of a logo to represent the quiz.
 ![Image of logo](docs/Header.JPG)
 
-# Start Page
+### Start Page
 The start page contains a button on which you can start the actual quiz.
 ![Image of Start Button and Heading](docs/Q & A.JPG)
 
-# Questions and Answers
+### Questions and Answers
 The Q/A page shows the question in the heading above and questions grouped in two options per line.
 ![Image of game with question and possible answers](docs/Onload.JPG)
 
 ## Technologies Used
-# Languages
--HTML
--CSS
--Javascript
+### Languages
+- HTML
+- CSS
+- Javascript
 
-# Librariesss 
+### Libraries 
 - Sweet Alerts 2
 
 ## Testing
