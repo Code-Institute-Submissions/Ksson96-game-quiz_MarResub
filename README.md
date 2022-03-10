@@ -134,6 +134,6 @@ Testing the application had me try the different screen sizes using the dev tool
 - Press the provided link
 - Site is accessible via [Movie Quiz](https://ksson96.github.io/game-quiz/)
   
-  ## Credits 
-  - Credit to my girlfriend for helping with testing of the quiz.
+## Credits 
+- Credit to my girlfriend for helping with testing of the quiz.
 
